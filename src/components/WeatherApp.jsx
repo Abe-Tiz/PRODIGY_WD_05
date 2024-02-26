@@ -19,7 +19,7 @@ const WeatherApp = () => {
   const [country, setCountry] = useState("");
   const [wicon, setWicon] = useState("");
 
-  let _api_key = "30a8ad210490517c86496df98341266a";
+  let _api_key = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     if (searchType === "current") {
